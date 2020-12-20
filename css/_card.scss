@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    background: url("../images/WhatsApp\ Image\ 2020-12-19\ at\ 17.13.35.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bg-second{
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+        background: linear-gradient(to right, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6);
+        opacity: 80%;
+        top: 0;
+        bottom: 0;
+    }
+    .wrapper-card{
+        width: 600px;
+        height: 300px;
+        background-blend-mode: multiply;
+        background: url("../images/WhatsApp\ Image\ 2020-12-19\ at\ 17.13.36.jpeg"),
+        linear-gradient(to right, #f6f6f6, #b6b6b6, #7a7a7a, #434342, #121211);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+        border-radius: 20px;
+        position: relative;
+
+        #img-absolute{
+            position: absolute;
+            width: auto;
+            height: 550px;
+            bottom: -30px;
+            right: 16%;
+        }
+
+        .content-card{
+            width: 100%;
+            height: 185px;
+
+            div{
+                width: 100%;
+                height: calc(100%/3);
+            }
+
+            .title-card{
+                font-size: 3.8rem;
+                font-weight: 700;
+                color: white;
+                font-family: "Open Sans", sans-serif;
+                display: flex;
+                align-items: center;
+            }
+
+            .description-card{
+                font-size: 0.7rem;
+                font-weight: 600;
+                color: white;
+                display: flex;
+                align-items: center;
+                p{
+                    padding: 0;
+                    margin: 0;
+                    width: 340px;
+                    font-weight: 500;
+                }
+            }
+
+            .button-card{
+                display: flex;
+                align-items: center;
+                
+                button{
+                    padding: 0.7rem 2rem;
+                    background: transparent;
+                    border: 1px solid white;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: white;
+                    transition: all .3s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(0, 0, 0, 5);
+                    }
+                }
+
+            }
+        }
+    }
+}
